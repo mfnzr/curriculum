@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@300&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #0E0B16;
+    --cor-secundaria: #E7DFDD;
+    --cor-terciaria: #A239CA;
+    --cor-icon: #22d4fd;
+    --cor-hover: #171127;
+
+    --font-titles: 'Lexend Mega', sans-serif;
+    --font-texts: 'Montserrat', sans-serif;
+}
+
+* {
+    /* height: 100vh; vh significa viewport height, ou seja o tamanho inteiro da pag */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 1% 0% 0% 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-texts) ;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 1.5rem;
+    font-family: var(--font-titles);
+    padding: 0 0 0.625rem 0;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-texts);
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    padding: 0rem 0rem 0.625rem 0rem;
+}
+
+.apresentacao__conteudo__texto__linhas {
+    padding: 0.0625rem;
+}
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    padding: 0.3125rem;
+}
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.562rem;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-titles);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.apresentacao__links__link {
+    /* background-color: #A239CA; */
+    display: flex;
+    justify-content: center;
+    gap: 1.562rem;
+    border: 0.125rem solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    color: var(--cor-secundaria);
+    border-radius: 1.25rem;
+    /* border-radius: 8px; fica mais quadrado */
+    font-size: 1rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    text-decoration: none;
+    font-family: var(--font-texts);
+    font-weight: 600;
+}
+
+.apresentacao__links__link.linkedin {
+    margin-bottom: 0.625rem;
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+    /* padding: 5%; se eu quiser que o botão fique maior quando colocar o mouse em cima */
+    font-family: var(--font-texts);
+    font-size: 1rem;
+}
+
+.foto__nanda {
+    width: 50%;
+}
+
+.rodape {
+    padding: 0.625rem;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--font-texts);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 5%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
